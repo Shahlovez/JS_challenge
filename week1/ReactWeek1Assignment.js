@@ -8,14 +8,12 @@ class Student{
         this.community = community;
     }
 }
-
 class Bootcamp{
     constructor (name, level, students = []){
         this.name = name;
         this.level = level;
         this.students = students;
     }
-
 
 // -----TASK 2------ // 
     
@@ -27,12 +25,12 @@ registerStudent(studentToRegister){
         this.students.push(studentToRegister);
         console.log(`Registering ${studentToRegister.email} to the bootcamp  ${this.name}`);
     }
- 
     return this.students;
 }
 }
 
 // -----TASK 3------ // 
+
 const webDevFundamentals = new Bootcamp('Web Development Fundamental','Beginner');
 const Sara = new Student("Sara",'sara@matrix.org','Florida');
 webDevFundamentals.registerStudent(Sara)
