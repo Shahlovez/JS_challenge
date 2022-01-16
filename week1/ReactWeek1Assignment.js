@@ -18,8 +18,7 @@ class Bootcamp{
 
 
 // -----TASK 2------ // 
-
-
+    
 registerStudent(studentToRegister){
     const registeredStudents = this.students.filter(student => student.email === studentToRegister.email);
     if(registeredStudents.length > 0) {
@@ -32,8 +31,6 @@ registerStudent(studentToRegister){
     return this.students;
 }
 }
-
-
 
 // -----TASK 3------ // 
 const webDevFundamentals = new Bootcamp('Web Development Fundamental','Beginner');
